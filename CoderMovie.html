@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderMovie</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="nav-categorias">
+            <a href="">Documentarios</a>
+            <a href="">Series de Tv</a>
+            <a href="">Filmes</a>
+
+        </nav>
+        <div class="nav-icons">
+            <a>Icon1</a>
+            <a>icon2</a>
+            <a>sign in</a>
+        </div>
+    </div>
+    <div class="sinopse">
+        <div class="description">
+            <h1>Demonslayer</h1>
+            <h2>Novo arco</h2>
+            <h3> Neste novo arco de Demon Slayer: Kimetsu no Yaiba, <br>
+                a jornada de Tanjiro Kamado o leva para a Vila dos Ferreiros, <br>
+                onde ele reencontra dois Hashira, os espadachins de elite do <br>
+                Esquadrão de Caçadores de Onis: Muichiro Tokito, o Hashira da Névoa, <br>
+                e Mitsuri Kanroji, o Hashira do Amor. <br>
+            </h3>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        
+    </div>
+
+</body>
+</html>
+<style>
+   
+    .sinopse {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        padding: 10px;
+    }
+    .description h1 {
+        color: white;
+        font-size: 70px;
+        margin: 1px 0;
+    }
+
+    .description h2 {
+        color: white;
+        font-size: 35px;
+        margin: 5px 0;
+    }
+
+    .description h3 {  
+        font-size: 18px; 
+        color: white;
+        margin: 10px 0;
+        
+    }
+
+
+    body {
+        margin: 10;
+        padding: 10px;
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    .cards{
+        margin-top: 350px;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card{
+        margin: 85px 85px;
+        width: 350px;
+        height: 300px;
+        color: red;
+        background-color: rgb(141, 134, 134);
+        border: solid 1px white;
+        
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        background-color: transparent(241, 240, 240);
+    }
+    .nav-categorias{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+    .nav-categorias a {
+        margin: 12px;
+        color: white;
+        font-size: 25px;
+        font-family: monospace;
+    }
+
+    .nav-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-icons a {
+        margin: 12px;
+        color: white;
+        font-size: 25px;
+        font-family: monospace;
+    }
+
+        /* Estilos para telas menores */
+    @media screen and (max-width: 768px) {
+        .cards {
+            flex-wrap: wrap;
+            margin-top: 50px;
+            height: auto;
+            justify-content: center;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .cards {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            height: auto;
+        }
+        .card {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .card {
+            width: 45%;
+            font-size: 18px;
+        }
+    }
+
+    
+
+</style>
